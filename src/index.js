@@ -1,18 +1,18 @@
-const StudentService = require('./services/StudentService')
+const EmployeeService = require('./services/EmployeeService')
 // firt way
 const printer = require('../src/utils/printer')
 // second way
-const { printStudent } = require('../src/utils/printer')
+const { printEmployee } = require('../src/utils/printer')
 
 function main() {
-    const student = StudentService.getStudent('Erisa', 'Spahiu', 40)
-    const student2 = StudentService.getStudent('Erisa', 'Shala', 60)
-    const student3 = StudentService.getStudent('Erisa', 'Shala')
+    const employee = EmployeeService.getEmployee('Erisa', 'Spahiu', 'Manager')
+    const employee2 = EmployeeService.getEmployee('Erisa', 'Shala', 'IT')
+    const employee3= EmployeeService.getEmployee('Erisa', 'Shala')
     // first way
-    printer.printStudent(student)
+    printer.printEmployee(employee)
     // second way
-    printStudent(student2)
-    printStudent(student3)
+    printEmployee(employee2)
+    printEmployee(employee3)
 }
 
 main()

@@ -1,7 +1,7 @@
-function printStudent(student) {
-    console.log(`Hello ${student.getName()} ${student.getSurname()}! Your age is ${student.getAge()}`)
+function printEmployee(employee) {
+    console.log(`Hello ${employee.getName()} ${employee.getSurname()}! Your position is ${employee.getPosition()}`)
 }
 
 module.exports = {
-    printStudent
+    printEmployee
 }

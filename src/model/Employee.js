@@ -1,8 +1,8 @@
-class Student {
-    constructor(name, surname, age) {
+class Employee {
+    constructor(name, surname, position) {
         this.name = name
         this.surname = surname
-        this.age = age
+        this.position = position
     }
 
     getName() {
@@ -13,9 +13,9 @@ class Student {
         return this.surname
     }
 
-    getAge() {
-        return this.age
+    getPosition() {
+        return this.position
     }
 }
 
-module.exports = Student
+module.exports = Employee
